@@ -1,0 +1,13 @@
+@HandlesType(values = {
+    jakarta.servlet.http.HttpServlet.class,
+    jarkarta.servlet.Filter.class,
+    jarkarta.servlet.ServletContextListener.class,
+    jarkarta.servlet.http.HttpSessionListener.class
+})
+public class WebAppInitializer implements ServletContainerInitializer {
+    @Override
+    public void onStartup(Set<Class<?> set, ServletContainerInitializer {
+        servletContext.setInitParameter("url", "https://nhnacademy.com");
+        servletContext.setInitParameter("counterFileName", "counter.dat");
+    }
+}

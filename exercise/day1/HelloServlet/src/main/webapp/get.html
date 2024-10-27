@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GET -> httpbin.org</title>
+</head>
+<body>
+  <form method="get" action="http://httpbin.org/get">
+    <input type="text" name="userId" placeholder="user Id" required/> <br />
+    <input type="text" name="userPassword" placeholder="user password" required/> <br />
+    <input type="submit"/>
+  </form>
+</body>
+</html>
+
+<!--위 폼에 "Joo", "1234" 입력 후 제출했을 때 서버가 반환하는 response인 아래의 JSON 데이터-->
+<!--{-->
+<!--"args": {-->
+<!--"userId": "Joo",-->
+<!--"userPassword": "1234"-->
+<!--},-->
+<!--"headers": {-->
+<!--"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",-->
+<!--"Accept-Encoding": "gzip, deflate, br, zstd",-->
+<!--"Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",-->
+<!--"Host": "httpbin.org",-->
+<!--"Priority": "u=0, i",-->
+<!--"Referer": "http://localhost:8080/",-->
+<!--"Sec-Ch-Ua": "\"Google Chrome\";v=\"129\", \"Not=A?Brand\";v=\"8\", \"Chromium\";v=\"129\"",-->
+<!--"Sec-Ch-Ua-Mobile": "?0",-->
+<!--"Sec-Ch-Ua-Platform": "\"macOS\"",-->
+<!--"Sec-Fetch-Dest": "document",-->
+<!--"Sec-Fetch-Mode": "navigate",-->
+<!--"Sec-Fetch-Site": "cross-site",-->
+<!--"Sec-Fetch-User": "?1",-->
+<!--"Upgrade-Insecure-Requests": "1",-->
+<!--"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",-->
+<!--"X-Amzn-Trace-Id": "Root=1-671602e9-6f4d3f6f4d299d1a2a6551c9"-->
+<!--},-->
+<!--"origin": "220.67.222.150",-->
+<!--"url": "https://httpbin.org/get?userId=Joo&userPassword=1234"-->
+<!--}-->

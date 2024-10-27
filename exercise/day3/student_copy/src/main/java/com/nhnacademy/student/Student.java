@@ -1,0 +1,40 @@
+package com.nhnacademy.student;
+
+import java.time.LocalDateTime;
+
+public class Student {
+    private String id;
+    private String name;
+    private Gender gender;
+    private int age;
+    private LocalDateTime createAt;
+
+    public Student(){}
+    public Student(String id, String name, Gender genter, int age, LocalDateTime createAt) {
+        this.id = id;
+        this.name = name;
+        this.gender = genter;
+        this.age = age;
+        this.createAt = createAt;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public LocalDateTime getCreateAt() {
+        return createAt;
+    }
+}

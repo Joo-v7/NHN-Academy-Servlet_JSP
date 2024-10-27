@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POST -> httpbin.org</title>
+</head>
+<body>
+  <form method="post" action="http://httpbin.org/post" enctype="multipart/form-data">
+    <input type="text" name="userId" placeholder="userId" required />
+    <input type="text" name="userPassword" placeholder="user password" required />
+    <input type="file" name="file1" /><br />
+    <input type="file" name="file2" /><br />
+    <input type="submit" />
+  </form>
+</body>
+</html>
+
+<!--위 폼에 "Joo"와 "1234" 입력 후 txt 파일 하나를  제출했을 때 서버가 반환하는 response인 아래의 JSON 데이터-->
+<!--텍스트 내용이 Base64로 Encoding됨: Binary Data를 Text로 바꾸는 Encoding-->
+<!--{-->
+<!--"args": {},-->
+<!--"data": "",-->
+<!--"files": {-->
+<!--"file1": "data:text/plain;base64,MjAxNS4xMi4xNSDA27y6DQoNCjEuIEZETSC067+qxvggufzAp7G4x8+x4iANCjIuIMfYudawxbiuwMcgsMvD4rChtMm68cauvPYsILz2waSwobTJuvHGrrz2IA0KMy4gxtC4rsa8xNq15SCzqrSptMIgsPrBpA0KNC4gQ0RNQSC6ucijyK3H2LytILq4s7268cauIL7Lvsazu7HiIA0KNS4gwdaw/L3ENrmuwaYgsLOz5CC7/bCis6q0wrDFICAgDQogICAtIMbQxba9usCnxKogDQogICAtIMDAtOS5+MijKD8pDQogICAtIGZhc3QgwMy09bPdIA0KICAgLSBpZWVlODAyLjExDQoNCi8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vIA0K"-->
+<!--},-->
+<!--"form": {-->
+<!--"file2": "",-->
+<!--"userId": "Joo",-->
+<!--"userPassword": "1234"-->
+<!--},-->
+<!--"headers": {-->
+<!--"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",-->
+<!--"Accept-Encoding": "gzip, deflate",-->
+<!--"Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",-->
+<!--"Cache-Control": "max-age=0",-->
+<!--"Content-Length": "901",-->
+<!--"Content-Type": "multipart/form-data; boundary=&#45;&#45;&#45;&#45;WebKitFormBoundaryXA1CAA8A7fFCmur7",-->
+<!--"Host": "httpbin.org",-->
+<!--"Origin": "http://localhost:8080",-->
+<!--"Referer": "http://localhost:8080/",-->
+<!--"Upgrade-Insecure-Requests": "1",-->
+<!--"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",-->
+<!--"X-Amzn-Trace-Id": "Root=1-6716031b-76cdf8c30bf27858359e7354"-->
+<!--},-->
+<!--"json": null,-->
+<!--"origin": "220.67.222.150",-->
+<!--"url": "http://httpbin.org/post"-->
+<!--}-->
